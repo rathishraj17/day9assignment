@@ -1,0 +1,42 @@
+1. . Create a List of Strings with student names and print it in sorted order
+
+package Newproject;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Day9assignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		List<String> Students = new ArrayList<String>();
+		Students.add("John");
+		Students.add("Ravi");
+		Students.add("Sathish");
+		Students.add("Ahmed");
+		Students.add("Yuvaraj");
+		Students.add("Suresh");
+		Students.add("Jai");
+		System.out.println("Students Name:");
+		
+		Collections.sort(Students);
+		
+		for (String name: Students ) {
+			System.out.println(name);
+		}
+	}
+}
+
+Output:
+Students Name:
+Ahmed
+Jai
+John
+Ravi
+Sathish
+Suresh
+Yuvaraj
+
