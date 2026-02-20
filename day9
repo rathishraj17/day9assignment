@@ -40,3 +40,43 @@ Sathish
 Suresh
 Yuvaraj
 
+2. Create a Set of numbers and print the value  only when it is odd number
+
+
+package Newproject;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Day9assignment2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		List<Integer> odd = new LinkedList<Integer>();
+		odd.add(12);
+		odd.add(13);
+		odd.add(17);
+		odd.add(18);
+		odd.add(20);
+		odd.add(25);
+		odd.add(39);
+		
+		for (int i=0; i<odd.size(); i++) {
+			
+		if(odd.get(i)%2!=0) {
+			System.out.println(odd.get(i));
+		}
+		
+		}
+	}
+
+}
+
+
+Output:
+13
+17
+25
+39
